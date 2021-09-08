@@ -123,3 +123,98 @@ ol은 출력시 1. 2. 3. 이렇게 숫자가 붙어 나옴
 ul은 그냥 점 같은 동그라미로 리스트들이 출력 됌
 
 ## 2.4.2 정의 목록
+
+```html
+dl		정의 목록 태그
+dt		정의 용어 태그
+dd		정의 설명 태그
+
+code2-15
+
+<body>
+    <dl>
+        <dt>HMTL</dt>
+        <dd>Mult</dd>
+        <dd>Conn</dd>
+        <dd>Device</dd>
+        
+        <dt>Milk</dt>
+        <dt>Animation</dt>
+        <dt>3D Transform</dt>
+    </dl>
+</body>
+
+```
+
+웹 표준에 따르면 기본 목록과 정의 목록의 사용 용도가 다르지만 실제 개발할 때는 대부분 용도 구분 없이 사용함. (하지만 최대한 요오에 맞게 사용)
+
+
+
+# 2.5 테이블 태그
+
+테이블 태그는 HTML 페이지에서 표를 만들 때 사용하는 태그.
+
+
+
+## 2.4.1 테이블 태그 기본
+
+표를 만들 때는 table 태그를 사용
+
+code 2-16 , 17 ,18
+
+
+
+#### 테이블 요소 태그
+
+```
+tr		표 내부의 행 태그
+th		행 내부의 제목 셀 태그
+td		행 내부의 일반 셀 태그
+```
+
+
+
+```html
+<body>
+    <table>
+        
+    </table>
+</body>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+        	<th>Data 1</th>
+            <th>Data 1</th>
+        </tr>
+        <tr>
+        	<th>Data 2</th>
+            <th>Data 2</th>
+        </tr>
+    </table>
+</body>
+```
+
+
+
+## 2.5.2 태이블 태그의 속성
+
+
+
+##### table 태그의 속성
+
+```
+border		표의 테두리 두께를 지정
+```
+
+##### th태그와 td 태그 속성
+
+```
+rowspan		셀의 높이를 지정
+colspan		셀의 너비를 지정 
+```
+
