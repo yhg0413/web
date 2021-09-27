@@ -218,3 +218,56 @@ rowspan		셀의 높이를 지정
 colspan		셀의 너비를 지정 
 ```
 
+code2-19
+
+```html
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="3">TableData</th>
+            <th rowspan="3">TableData</th>
+        </tr>
+        <tr>
+        	<td>Table Data</td>
+            <td rowsapn="2">TableData</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+        	<td>TableData</td>
+            <td>TableData</td>
+        </tr>
+    </table>
+</body>
+```
+
+
+
+## 2.6 이미지 태그
+
+이미지를 생성할 때 img 태그를 사용
+
+```
+src 		이미지 경로 지정
+alt 		이미지가 없을 때 나오는 글자 지정
+width 		이미지 너비 지정
+height		이미지 높이 지정
+```
+
+src 속성에 이미지 경로를 입력하면 이미지가 ㅡㄷㅁ
+
+`<img src="이미지 경로.jpg" alt="이미지 없을 경우" width="300"/>`
+
+###### placehold.it 이미지가 없을시 사용하면 입력한 사이즈의 빈 이미지값을 보여줌
+
+```html
+<body>
+    <img src="http://placehold.it/300x200">
+    <img src="http://placehold.it/200x150">
+    <img src="http://placehold.it/100x100">
+</body>
+```
+
+
+
+## 2.7 오디오 태그
+
