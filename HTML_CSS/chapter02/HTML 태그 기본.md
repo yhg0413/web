@@ -271,3 +271,107 @@ src 속성에 이미지 경로를 입력하면 이미지가 ㅡㄷㅁ
 
 ## 2.7 오디오 태그
 
+HTML5에 추가된 기능으로 인터넷 익스플로러 8이하에서는 사용할 수 없다.
+
+
+
+### 2.7.1 audio 태그
+
+audio 태그의 속성
+
+```
+src			음악 파일의 경로지정
+preload		음악을 재생하기전 모두 불러올지 지정
+autoplay	음악을 자동 재생할지 지정
+loop		음악을 반복할지 지정
+controls	음악 재생 도구를 출력할지 지정
+```
+
+
+
+code 2-24
+
+```html
+<body>
+    <audio src="오디오.mp3" controls="controls"></audio>
+</body>
+<body>
+    <audio src="오디오.mp3" controls="controls" autoplay="autoplay"></audio>
+</body>
+<body>
+    <audio src="오디오.mp3" controls autoplay></audio>
+</body> //이와같은 표기법을 HTML5 표기법이라고 한다.
+```
+
+
+
+### 2.7.2 source 태그
+
+웹 브라우저의 버전에 따라서 코드가 실행되지 않을 수 있다. 브라우저마다 지원하는 확장자의 형식이 다르기 때문인데 이를 맞춰줄 때 사용한다. audio 또는 video 태그 안에서 사용 가능하다.
+
+```html
+<body>
+    <audio controls>
+    	<source scr="오디오.mp3" type="audio/mp3"/>
+        <source scr="오디오.ogg" type="audio.ogg"/>
+    </audio>
+</body>
+```
+
+
+
+각각의 지원되는 파일을 사용되게 함으로 써 음악또는 비디오 파일을 재생시키는데 에러가 없게한다.
+
+ 
+
+
+
+
+
+## 2.8 비디오태그
+
+웹에서 동영상을 볼 수 있게 해주는 태그
+
+
+
+### 2.8.1 video 태그
+
+웹 브라우저는 mp4형식과 webM 형식을 지원함
+
+##### viedo 태그의 속성
+
+```
+src			비디오파일의 경로
+poster		비디오 준비 중일 때의 이미지 파일 경로
+preload		비디오 재생전 모두 불러올지 지정
+autoplay	자동재생할지 지정
+loop		반복할지 지정
+controls	재생도구를 출력할지 지정
+width		비디오의 너비 지정
+height		비디오의 높이 지정
+```
+
+video 태그도 웹 브라우저마다 지원하는 비디오 형식이 다르므로 source 태그를 사용한다
+
+지원하는 비디오 형식은 검색해서 찾아보자.
+
+
+
+code2-29
+
+```html
+<body>
+    <video poster="http://placehold.it/640x360"
+           width="640" height="360" controls>
+    	<source src="동영상.mp4" type="video/mp4"/>
+        <source src="동영상.webm" type="video/webm"/>
+    </video>
+</body>
+```
+
+![image-20210928170017637](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20210928170017637.png)
+
+
+
+
+
