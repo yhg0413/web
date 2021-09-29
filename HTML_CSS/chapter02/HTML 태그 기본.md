@@ -375,3 +375,87 @@ code2-29
 
 
 
+### 2.8.2 track 태그
+
+track 태그는 video 태그에 자막을 표시할 대 사용하는 태그. (srt 확장자)
+
+
+
+code 2-33
+
+```html
+<body>
+   	<video width="640", height="360" controls="controls",poster = "http://placeholad.it/640x360">
+    	<source src="동영상.mp4" type="video/mp4"/>
+        <source src="동영상.webm" type="video/webm"/>
+        
+        <track kind="subtitles" src="자막.srt" srclang="ko" label = "korean"/>
+        <track kind="subtitles" src="자막.srt" srclang="en" label = "korean"/>
+        <track kind="subtitles" src="자막.srt" srclang="jp" label = "korean"/>
+        <track kind="subtitles" src="자막.srt" srclang="ch" label = "korean"/>
+    
+    </video>
+</body>
+```
+
+
+
+## 2.9 입력 양식 태그
+
+입력 양식은 사용자에게 입력받는 공간을 말한다.
+
+
+
+### 2.9.1 입력 양식 개요
+
+입력 양식은 form 태그를 사용해 생성한다.
+
+입력 양식은 input 태그를 입력한다.
+
+code 2-35
+
+```html
+<body>
+    <form>
+        <input type="text" name="search" />
+        <input type="submit"/>
+    </form>
+</body>
+```
+
+![image-20210930083522306](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20210930083522306.png)
+
+form 태그의 속성
+
+```
+action		입력 데이터의 전달 위치를 지정한다.
+method		입력 데이터의 전달 방식을 선택한다.
+```
+
+자주 사용되는 method 속성은 GET과 POST이다.
+
+#### GET요청
+
+```html
+<body>
+    <form method="get">
+        <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+</body>
+```
+
+#### POST요청
+
+```html
+<body>
+    <form method="post">
+        <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+</body>
+```
+
+
+
+### 2.9.2 기본 input 태그
