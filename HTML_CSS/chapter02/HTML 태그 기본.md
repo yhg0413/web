@@ -423,7 +423,11 @@ code 2-35
 </body>
 ```
 
+
+
 ![image-20210930083522306](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20210930083522306.png)
+
+
 
 form 태그의 속성
 
@@ -459,3 +463,64 @@ method		입력 데이터의 전달 방식을 선택한다.
 
 
 ### 2.9.2 기본 input 태그
+
+input 태그는 사용자에게 정보를 입력받는 기능을 수행하는 태그 
+
+
+
+code 2-37
+
+```html
+<body>
+    <form>
+        <input type="text" name="name" /><br/>
+        <input type="password" name="password"/><br/>
+        <input type="file" name="file" /><br />
+        <inpyt type="submit" />
+    </form>
+</body>
+
+```
+
+결과
+
+ ![image-20211001082402991](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20211001082402991.png)
+
+input 태그의 type 속성값
+
+```
+button 			버튼 생성
+checkbox 		체크박스 생성
+file			파일 입력 양식 생성
+hidden			사용자에게 보이지 않음
+image			이미지 형태 생성
+password		비밀번호 입력 양식 생성
+radio			라디오 버튼 생성
+reset			초기화 버튼 생성
+submit			제출 버튼 생성
+text			글자 입력 양식 생성
+```
+
+code2-38 input 태그의 type 속성값 2
+
+```html
+<body>
+    <form>
+        <input type="text"/><br/>
+        <input type="button"/><br/>
+        <input type="checkbox"/><br/>
+        <input type="file"/><br/>
+        <input type="hidden"/><br/>
+        <input type="image"/><br/>
+        <input type="password"/><br/>
+        <input type="radio"/><br/>
+        <input type="reset"/><br/>
+        <input type="submit"/><br/>
+    </form>
+</body>
+```
+
+결과
+
+![image-20211001083056984](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20211001083056984.png)
+
