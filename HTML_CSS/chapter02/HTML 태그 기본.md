@@ -524,3 +524,87 @@ code2-38 input 태그의 type 속성값 2
 
 ![image-20211001083056984](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20211001083056984.png)
 
+일반적으로 input 태그는 form 태그 안에 있지만 Ajax 기술로 규칙을 지키지 않는 경우가 있다.
+
+labal 태그는 input 태그를 설명하는데 사용
+
+```html
+<body>
+    <form>
+        <lable>이름</lable>
+        <input type="text"/>
+    </form>
+</body>
+```
+
+
+
+
+
+### 2.9.3 HTML5 입력 양식 태그
+
+2.9.2의 input 태그는 HTML4 에서 지원하던 태그이다. HTML5의 input태그를 알아보자
+
+```html
+color			색상 선택 양식을 생성
+date 			일 선택 양식을 생성
+datetime		날짜 선택 양식을 생성
+datetime-local	지역 날짜 선택 양식을 생성
+email			이메일 입력 양싱을 생성
+month			월 선택 양식 생성
+number			숫자 생성 양식 생성
+range			범위 선택 양식 생성
+search			검색어 입력 양식 생성
+tel				전화번호 입력 양식 생성
+time			시간 선택 양식 생성
+url 			URL 주소 입력 양식 생성
+week			주 선택 양식 생성
+```
+
+code2-41
+
+```html
+<body>
+    <form>
+        <input type="color"/><br/>
+        <input type="date"/><br/>
+        <input type="datetime"/><br/>
+        <input type="datetime-local"/><br/>
+        <input type="emial"/><br/>
+        <input type="month"/><br/>
+        <input type="number"/><br/>
+        <input type="range"/><br/>
+        <input type="search"/><br/>
+        <input type="tel"/><br/>
+        <input type="time"/><br/>
+        <input type="url"/><br/>
+        <input type="week"/><br/> 
+    </form>
+</body>
+```
+
+결과
+
+![image-20211001172159791](C:\Users\MYCOM\AppData\Roaming\Typora\typora-user-images\image-20211001172159791.png)
+
+
+
+### 2.9.4 textarea 태그
+
+input 태그가 아닌 입력양식이 2개 있다. textarea 태그와 select 태그
+
+
+
+code2-42 textarea 태그
+
+```html
+<body>
+    <form>
+        <textarea></textarea>
+    </form>
+</body>
+```
+
+여러줄의 글자를 입력할 때 사용 하는 태그
+
+textarea는 너비를 지정하는 cols 과 높이를 지정하는 rows 속성을 가지고있다.
